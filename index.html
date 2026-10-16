@@ -17,36 +17,6 @@
         We collect small initiatives that use open timetables, routes, and
         delays to make travel easier.
       </p>
-      <section id="network" aria-labelledby="network-heading">
-        <h2 id="network-heading">Europe, by rail</h2>
-        <p>A few main lines. Many possible journeys. Select a city to explore its connections.</p>
-        <fieldset id="network-filters" hidden>
-          <legend>Show connections</legend>
-          <label><input type="checkbox" id="day-trains" checked> Long-distance</label>
-          <label><input type="checkbox" id="night-trains" checked> Night trains</label>
-        </fieldset>
-        <p class="network-legend"><span>━ Long-distance</span> <span>┄ Night train</span> <span>◎ Major hub</span></p>
-        <div class="network-layout">
-          <div class="network-scroll" tabindex="0" role="region" aria-label="European rail map; scroll horizontally on smaller screens">
-            <svg id="rail-map" viewBox="0 0 1040 720" width="1040" height="720" role="group" aria-labelledby="map-title map-description">
-              <title id="map-title">Selected European long-distance and night train connections</title>
-              <desc id="map-description">Schematic map. Solid lines represent daytime connections, dashed lines night trains. Larger double circles mark major hubs. Select a station with a click, or use Tab and Enter.</desc>
-            </svg>
-          </div>
-          <aside id="city-details" aria-labelledby="city-name" aria-live="polite" aria-atomic="true">
-            <h3 id="city-name">Where would you go?</h3>
-            <p>Select a station on the map, or choose a city below.</p>
-          </aside>
-        </div>
-        <p id="city-picker" hidden><label for="city-select">Choose a city: </label><select id="city-select"><option value="">Select a city</option></select></p>
-        <noscript><p>Enable JavaScript to explore the interactive map. See the <a href="https://www.eurostar.com/uk-en/destinations/routemap">Eurostar network</a> and <a href="https://www.nightjet.com/en/reiseziele">Nightjet destinations</a> for rail connections.</p></noscript>
-        <p><small>Selected corridors, not a complete network. Geography and intermediate stops are simplified; crossings without a circle are not interchanges. Check operators for travel dates and service changes.</small></p>
-        <details>
-          <summary>About this map &amp; sources</summary>
-          <p>This is a curated overview, not a live timetable. Connections in each city panel follow the map; they are not an exhaustive list of departures. Major hubs are editorially selected interchanges.</p>
-          <p>Network references: <a href="https://www.eurostar.com/uk-en/destinations/routemap">Eurostar</a>, <a href="https://www.bahn.com/en">Deutsche Bahn</a>, <a href="https://www.sbb.ch/en">SBB</a>, <a href="https://www.oebb.at/en/">ÖBB</a>, <a href="https://www.sncf-connect.com/en-en/">SNCF</a>, <a href="https://www.trenitalia.com/en.html">Trenitalia</a> and <a href="https://www.nightjet.com/en/reiseziele">Nightjet</a>. Night routes cross-checked against Nightjet’s <a href="https://www.nightjet.com/en/reiseziele/schweiz/zuerich">Zurich</a> and <a href="https://www.nightjet.com/en/reiseziele/oesterreich/wien">Vienna</a> destination pages on 16 October 2026.</p>
-        </details>
-      </section>
       <section aria-labelledby="interests-heading">
         <h2 id="interests-heading">What interests us</h2>
         <ul>
@@ -61,6 +31,38 @@
           We are a group of people working in software development and the railway
           industry. We want to make travelling by rail more accessible.
         </p>
+      </section>
+      <section id="network" aria-labelledby="network-heading">
+        <h2 id="network-heading">Europe, by rail</h2>
+        <p>A few main lines. Many possible journeys. Select a city to explore its connections.</p>
+        <fieldset id="network-filters" hidden>
+          <legend>Show connections</legend>
+          <label><input type="checkbox" id="day-trains" checked> Long-distance</label>
+          <label><input type="checkbox" id="night-trains" checked> Night trains</label>
+        </fieldset>
+        <p class="network-legend"><span>━ Long-distance</span> <span>┄ Night train</span> <span>◎ Major hub</span></p>
+        <div class="network-layout">
+          <div class="network-scroll" tabindex="0" role="region" aria-label="European rail map; scroll horizontally on smaller screens">
+            <svg id="rail-map" viewBox="0 -430 1040 1150" width="1040" height="1150" role="group" aria-labelledby="map-title map-description">
+              <title id="map-title">Selected European long-distance and night train connections</title>
+              <desc id="map-description">Schematic map including Denmark, Sweden and Norway. Solid lines represent daytime connections, dashed lines night trains including Nightjet, European Sleeper, RDC EuroNight and Snälltåget. Larger double circles mark major hubs. Select a station with a click, or use Tab and Enter.</desc>
+            </svg>
+          </div>
+          <aside id="city-details" aria-labelledby="city-name" aria-live="polite" aria-atomic="true">
+            <h3 id="city-name">Where would you go?</h3>
+            <p>Select a station on the map, or choose a city below.</p>
+          </aside>
+        </div>
+        <p id="city-picker" hidden><label for="city-select">Choose a city: </label><select id="city-select"><option value="">Select a city</option></select></p>
+        <noscript><p>Enable JavaScript to explore the interactive map. See the <a href="https://www.eurostar.com/uk-en/destinations/routemap">Eurostar network</a> and <a href="https://www.nightjet.com/en/reiseziele">Nightjet destinations</a> for rail connections.</p></noscript>
+        <p><small>Selected corridors, not a complete network. Geography and intermediate stops are simplified; crossings without a circle are not interchanges. Night train lines show the whole service, including daytime sections. Seasonal routes and selected operating days are explained in the city panels. Check operators for travel dates and service changes.</small></p>
+        <details>
+          <summary>About this map &amp; sources</summary>
+          <p>This is a curated overview, not a live timetable. Connections in each city panel follow the map; they are not an exhaustive list of departures. Major hubs are editorially selected interchanges. City nodes group stations in the same urban area: a connection may require a local transfer. The operator links and service notes identify the relevant stations. Routes with several city stops list the other selected stops served by that train.</p>
+          <p>Basel is shown on the Nightjet corridors between Zurich and Hamburg, Berlin or Amsterdam. Reference: <a href="https://www.sbb.ch/en/leisure-holidays/europe/night-trains/nightjet.html">SBB Nightjet</a>. Basel SBB and Basel Bad Bf are grouped in one city node.</p>
+          <p>Network references: <a href="https://www.eurostar.com/uk-en/destinations/routemap">Eurostar</a>, <a href="https://www.bahn.com/en">Deutsche Bahn</a>, <a href="https://www.sbb.ch/en">SBB</a>, <a href="https://www.oebb.at/en/">ÖBB</a>, <a href="https://www.sncf-connect.com/en-en/">SNCF</a>, <a href="https://www.trenitalia.com/en.html">Trenitalia</a> and <a href="https://www.nightjet.com/en/reiseziele">Nightjet</a>. Night routes cross-checked against Nightjet’s <a href="https://www.nightjet.com/en/reiseziele/schweiz/zuerich">Zurich</a> and <a href="https://www.nightjet.com/en/reiseziele/oesterreich/wien">Vienna</a> destination pages on 16 October 2026.</p>
+          <p>Scandinavia and additional night trains: <a href="https://nightride.com/en">Night Ride</a>, <a href="https://europeansleeper.eu/timetable">European Sleeper timetables</a>, <a href="https://www.nachtexpress.de/en/timetable/">RDC EuroNight timetables</a>, <a href="https://www.snalltaget.se/en/berlin">Snälltåget to Berlin</a>, <a href="https://www.snalltaget.se/tag-till-storlien">Snälltåget to Storlien</a>, <a href="https://www.snalltaget.se/en/train-to-austria-winter">Snälltåget to Austria</a>, <a href="https://www.snalltaget.se/en/day-train-hamburg-copenhagen-stockholm">Hamburg–Stockholm daytime train</a>, <a href="https://www.snalltaget.se/en/malmo-gothenburg-oslo">Malmö–Oslo daytime train</a>, <a href="https://www.vy.no/en">Vy</a>, <a href="https://www.sj.no/en/plan-your-journey/night-train/">SJ Nord</a> and <a href="https://www.sj.se/en/about-the-journey/sj-night-train">SJ</a>. Checked on 16 October 2026. No announced future European Sleeper routes to Scandinavia are shown.</p>
+        </details>
       </section>
     </main>
   </body>
