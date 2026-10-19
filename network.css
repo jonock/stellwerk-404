@@ -1,4 +1,5 @@
-/* Keep the document's native typography and controls. Styles belong to the map. */
+/* Keep the document's native typography and controls. */
+.site-logo { display: block; width: 405px; max-width: 100%; height: auto; }
 #network { max-width: 1440px; }
 #network a { color: #000; }
 #network-filters { width: fit-content; }
